@@ -1,8 +1,13 @@
 #!/usr/bin/python3
-"""" returns a list of lists of integers"""
+"""
+Create a function that returns a list of lists of integers
+"""
 
 
 def pascal_triangle(n):
+    """
+    function representing the pascal's triangle of n:
+    """
     result = []
     if n <= 0:
         return result
@@ -15,4 +20,4 @@ def pascal_triangle(n):
                   value in enumerate(actual)]
         last = actual
         result.append(actual)
-    return
+    return result
